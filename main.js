@@ -66,6 +66,7 @@ function testGameOver() {
         snake[0].y > rows - 1 ||
         duplicatePart
     ) {
+        playSound('src/fail.ogg');
         placeFood();
         snake = [{
             x: 19,
@@ -137,6 +138,7 @@ function gameLoop() {
     if (snake[0].x == food.x &&
         snake[0].y == food.y) {
         foodCollected = true;
+        playSound('src/schmatz.ogg');
         placeFood();
     }
 }
@@ -181,3 +183,14 @@ function updateTime() {
     document.getElementById('time').textContent = time;
     time++;
 }
+
+function isSoundMuted() {
+    return document.getElementById('checkbox').checked;
+}
+
+function playSound(file) {
+    if (isSoundMuted()) return;
+    let audio = new Audio(file);
+    audio.play();
+}
+
