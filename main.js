@@ -9,9 +9,9 @@ let snake = [{
 
 let food;
 let foodImage = new Image();
-foodImage.src = 'apfel.png';
+foodImage.src = 'src/apfel.png';
 let snakeHeadImage = new Image();
-snakeHeadImage.src = 'head.png';
+snakeHeadImage.src = 'src/head.png';
 
 let cellWidth = canvas.width / cols;
 let cellHeight = canvas.height / rows;
