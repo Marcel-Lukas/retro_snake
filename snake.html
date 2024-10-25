@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Marcel Lukas">
+        <link rel="icon" type="image/png" href="favicon/favicon-48x48.png" sizes="48x48" />
+        <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+        <link rel="shortcut icon" href="favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="favicon/site.webmanifest" />
+        <title>Snake Game</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+
+      <main>
+
+            
+        <div id="container">
+
+          <h1 id="retro">Retro Snake</h1>
+          <div id="hr"></div>
+          <div id="score-container">
+            <div class="score-box" >
+              <p>Punkte:</p>
+              <p>Zeit:</p>
+            </div> 
+
+            <div class="score-box" >
+              <span id="score">0</span>
+              <span id="time">0</span>
+            </div>  
+          </div>
+          <div id="hr"></div>
+          <div id="score-container">
+            <div class="score-box" >
+              <p>Highscore:</p>
+            </div> 
+
+            <div class="score-box" >
+              <span id="highs-core">0</span>
+            </div>  
+          </div>
+          <div id="hr"></div>
+          <span class="steuerung">Steuerung mit Pfeiltasten</span>
+          <img id="tasten" src="pfeiltasten.png" alt="">
+          <a id="btn" href="snake.html">Neustart</a>
+          <div class="pause" id="btn"><span>Pause</span></div>
+          <div id="kontakt"><span>Marcel Lukas</span><a href="https://github.com/Marcel-Lukas" target="_blank" rel="noopener noreferrer"><img id="gitlogo" src="github-logo.png" alt=""></a></div>
+        </div>
+
+
+
+        <canvas id="canvas" width="800" height="800"></canvas>
+
+      </main>
+
+    <script src="main.js"></script>
+    <script>
+      window.addEventListener('load', () => {
+          const logo = document.querySelector('#retro');
+          logo.classList.add('loaded');
+      });
+    </script>
+    </body>
+
+</html>
