@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="de">
     <head>
@@ -6,11 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Marcel Lukas">
-        <link rel="icon" type="image/png" href="src/favicon/favicon-48x48.png" sizes="48x48"/>
-        <link rel="icon" type="image/svg+xml" href="src/favicon/favicon.svg"/>
-        <link rel="shortcut icon" href="src/favicon/favicon.ico"/>
-        <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png"/>
-        <link rel="manifest" href="src/favicon/site.webmanifest"/>
+        <link rel="icon" type="image/png" href="src/favicon/favicon-48x48.png" sizes="48x48">
+        <link rel="icon" type="image/svg+xml" href="src/favicon/favicon.svg">
+        <link rel="shortcut icon" href="src/favicon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png">
+        <link rel="manifest" href="src/favicon/site.webmanifest">
         <title>Snake Game</title>
         <link rel="stylesheet" type="text/css" href="src/styles.css">
     </head>
@@ -18,8 +17,8 @@
       <main>        
         <div id="container">
           <h1 id="retro">Retro Snake</h1>
-          <div id="hr"></div>
-          <div id="score-container">
+          <div class="hr"></div>
+          <div class="score-container">
             <div class="score-box" >
               <p>Punkte:</p>
               <p>Zeit:</p>
@@ -29,23 +28,23 @@
               <span id="time">0</span>
             </div>  
           </div>
-          <div id="hr"></div>
-          <div id="score-container">
-            <div class="score-box" >
+          <div class="hr"></div>
+          <div class="score-container">
+            <div class="score-box">
               <p>Highscore:</p>
             </div> 
             <div class="score-box" >
               <span id="highs-core">0</span>
             </div>  
           </div>
-          <div id="hr"></div>
+          <div class="hr"></div>
           <span class="steuerung">Steuerung mit Pfeiltasten</span>
           <img id="tasten" src="src/pfeiltasten.png" alt="Pfeiltasten">
-          <a id="btn" href="index.html">Neustart</a>
-          <div class="pause" id="btn"><span>Pause</span></div>
+          <a class="btn" href="index.html">Neustart</a>
+          <div class="pause btn"><span>Pause</span></div>
           <div id="toggelswitch">
             <span class="spanswitch">Sound</span>
-            <input id="checkbox" class="checkbox" name="checkbox" type="checkbox" />
+            <input id="checkbox" class="checkbox" name="checkbox" type="checkbox">
             <label class="label" for="checkbox"></label>
             <span class="spanswitch">On/Off</span>
           </div>
